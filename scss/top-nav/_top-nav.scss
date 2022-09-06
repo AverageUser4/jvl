@@ -26,18 +26,62 @@
 .top-nav__second-list {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: flex-end;
-  gap: 32px;
+  column-gap: 32px;
+  row-gap: 12px;
   flex: 1 1 0;
+  flex-wrap: wrap;
   padding: 0 32px;
+  font-size: 14px;
+}
+
+.top-nav__list-mobile-invisible {
+  display: none;
+}
+
+.top-nav__first-list-link,
+.top-nav__second-list-link {
+  text-decoration: none;
 }
 
 .top-nav__first-list {
   background-color: white;
 }
 
+.top-nav__first-list-link {
+  color: var.$brand-blue;
+}
+
+.top-nav__first-list-button {
+  border: none;
+  background: transparent;
+}
+
 .top-nav__second-list {
   background-color: #e7ebed;
   box-shadow: 0 -2px 0 #dcdfe1;
   z-index: 1;
+}
+
+.top-nav__second-list-link {
+  font-weight: bold;
+  color: #1b1b1b;
+}
+
+.top-nav__second-list-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  border: 3px solid var.$brand-blue;
+  background-color: white;
+  width: 48px;
+  height: 48px;
+}
+
+.top-nav__second-list-button-div {
+  width: 80%;
+  border-bottom: 3px solid var.$brand-blue;
 }

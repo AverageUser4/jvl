@@ -4,6 +4,12 @@ body {
   background-color: black;
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .pure-list {
   margin: 0;
   padding: 0;

@@ -1,0 +1,28 @@
+.first-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 22px;
+  height: 383px;
+  padding: 0 16px;
+  background-image: url('../resources/photos/home-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.first-article__header {
+  font-size: 48px;
+  margin: 0;
+  font-weight: normal;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.54);
+  text-align: center;
+}
+
+.first-article__span {
+  font-size: 24px;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.54);
+  text-align: center;
+}
