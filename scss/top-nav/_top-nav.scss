@@ -1,0 +1,43 @@
+@use '../general/var';
+
+.top-nav {
+  display: flex;
+}
+
+.logo-container {
+  flex: 0;
+  background-color: var.$brand-blue;
+  padding: 0 20px;
+}
+
+.logo-container__logo {
+  display: block;
+  width: 280px;
+  height: 185px;
+}
+
+.top-nav__lists-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+.top-nav__first-list,
+.top-nav__second-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  flex: 1 1 0;
+  padding: 0 32px;
+}
+
+.top-nav__first-list {
+  background-color: white;
+}
+
+.top-nav__second-list {
+  background-color: #e7ebed;
+  box-shadow: 0 -2px 0 #dcdfe1;
+  z-index: 1;
+}

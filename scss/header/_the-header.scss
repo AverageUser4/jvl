@@ -1,0 +1,54 @@
+@use '../general/var';
+
+.the-header {
+  background-image: url('../resources/header/wood.jpg');
+  padding: 12px 16px;
+}
+
+.the-header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 35px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  height: inherit;
+}
+
+.the-header-nav__links-list {
+  display: flex;
+  column-gap: 35px;
+}
+
+.the-header-nav__link {
+  display: block;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.the-header-nav__buttons-list {
+  display: flex;
+  column-gap: 12px;
+}
+
+.the-header-nav__button {
+  display: block;
+  padding: 8px;
+  background-color: var.$brand-blue;
+  font-size: 12px;
+  line-height: 100%;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.the-header-nav__icons-list {
+  display: flex;
+  column-gap: 12px;
+}
+
+.the-header-nav__icon {
+  width: 16px;
+  height: 16px;
+}
