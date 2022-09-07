@@ -14,8 +14,20 @@ button:hover {
   list-style-type: none;
 }
 
+.brand-button {
+  background-color: #3697d3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.brand-button--white {
+  background-color: white;
+  color: #3697d3;
+}
+
 .the-header {
-  background-image: url("../resources/header/wood.jpg");
+  background-image: url("../resources/woods/top-header-wood.jpg");
   padding: 12px 16px;
 }
 
@@ -49,12 +61,8 @@ button:hover {
 .the-header-nav__button {
   display: block;
   padding: 8px;
-  background-color: #3697d3;
   font-size: 12px;
   line-height: 100%;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
 .the-header-nav__icons-list {
@@ -193,6 +201,209 @@ button:hover {
 
 .the-main {
   background-color: #FFF4DB;
+}
+
+/* search form */
+.the-main__search-form {
+  padding: 36px 0;
+}
+
+.the-main__search-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.the-main__search-span {
+  font-size: 36px;
+  color: #3a3a3a;
+}
+
+.the-main__search-input {
+  width: 40%;
+  padding: 12px 64px 12px 24px;
+  font-size: 36px;
+  color: #3a3a3a;
+  background-image: url("../resources/icons/magnifying-glass.svg");
+  background-repeat: no-repeat;
+  background-position: center right 16px;
+  background-size: 26px;
+  border: none;
+}
+
+/* main content */
+.main-content {
+  padding: 0 40px;
+}
+
+.main-content__header {
+  height: 114px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-image: url("../resources/woods/main-header-wood.png");
+  background-size: 100% 114px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 2px 3px black;
+  text-align: center;
+}
+
+.main-content__shelves-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 32px;
+  row-gap: 172px;
+  padding: 91px 120px 100px;
+  background-image: url("../resources/woods/shelf.png");
+  background-size: 100% 460px;
+}
+
+.main-content__image-container {
+  position: relative;
+  text-decoration: none;
+}
+.main-content__image-container:hover > .main-content__image-header {
+  color: white;
+}
+.main-content__image-container:hover > .main-content__image {
+  top: -42px;
+}
+
+.main-content__image-header {
+  position: absolute;
+  top: -32px;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #1b1b1b;
+  font-weight: normal;
+  z-index: 1;
+  transition: color 300ms;
+}
+
+.main-content__image {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 215px;
+  height: 288px;
+  transition: top 300ms;
+}
+
+/* other main content */
+.other-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 40px 80px;
+}
+
+.other-main-content__article {
+  width: 250px;
+  height: 190px;
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+}
+
+.other-main-content__first-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  background-image: url("../resources/other-main-content/podcasts.png");
+}
+
+.other-main-content__first-article-header {
+  margin: 0;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.other-main-content__first-article-span {
+  font-size: 14px;
+}
+
+.other-main-content__first-article-link {
+  display: block;
+  font-size: 14px;
+  width: max-content;
+  padding: 4px 12px;
+  margin-top: 8px;
+}
+
+.other-main-content__second-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 22px;
+  background-image: url("../resources/other-main-content/donate.png");
+}
+
+.other-main-content__second-article-header {
+  font-size: 19px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.other-main-content__second-article-link {
+  display: block;
+  padding: 4px 16px;
+  font-size: 14px;
+}
+
+.other-main-content__third-article {
+  padding-top: 32px;
+  box-sizing: border-box;
+  background-image: url("../resources/other-main-content/video.jpg");
+  text-align: left;
+}
+
+.other-main-content__third-article-header-container {
+  display: flex;
+}
+
+.other-main-content__third-article-header {
+  margin: 0;
+  width: max-content;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #3697d3;
+  font-weight: normal;
+  font-family: serif;
+}
+
+.other-main-content__third-article-sharp-edge {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17.5px 10px;
+  border-color: #3697d3 transparent transparent #3697d3;
+}
+
+.other-main-content__third-article-link {
+  display: block;
+  width: max-content;
+  margin: 48px auto 0;
+  padding: 6px 24px;
+  font-size: 14px;
+}
+
+.other-main-content__fourth-article {
+  background-image: url("../resources/other-main-content/today.jpg");
+}
+
+@media (min-width: 1000px) {
+  .main-content {
+    padding: 0 120px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

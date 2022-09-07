@@ -1,3 +1,5 @@
+@use 'var';
+
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
@@ -14,4 +16,15 @@ button {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.brand-button {
+  background-color: var.$brand-blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.brand-button--white {
+  background-color: white;
+  color: var.$brand-blue;
 }
